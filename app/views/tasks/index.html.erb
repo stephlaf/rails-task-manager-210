@@ -8,4 +8,9 @@
   <% else %>
     <i class="far fa-square"></i>
   <% end %>
+  <p><%= link_to 'Delete task', task_path(task), method: :delete, data: {confirm: "Are you sure?"} %></p>
 <% end %>
+
+<p>
+  <%= link_to 'Create a new task', new_task_path %>
+</p>
